@@ -40,7 +40,6 @@ body {
     position: absolute;
     top: 30px;
     right: 30px;
-    color: #fff;
     cursor: pointer;
     z-index: 1;
 }
@@ -118,7 +117,7 @@ button#equal {
 /* dark theme */
 
 .calculator.dark {
-  background-color: #fff;
+  background-color: #f3ebeb;
 }
 
 .calculator.dark #display {
@@ -153,10 +152,6 @@ button#equal {
 
 .calculator {
   background-color: #071115;
-}
-
-.calculator #display {
-  color: #f8fafb;
 }
 
 .calculator button#clear {
