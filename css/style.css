@@ -36,11 +36,10 @@ body {
     box-shadow: 0 0 30px #000;
 }
 
-.theme-toggler {
+.body-toggler {
     position: absolute;
     top: 30px;
-    right: 30px;
-    cursor: pointer;
+    right: 20px;
     z-index: 1;
 }
 input[type="checkbox"]{
