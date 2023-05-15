@@ -1,22 +1,33 @@
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     outline: 0;
     transition: all 0.5s ease;
+    font-weight: 500;
+}
+h1{
+  top: auto;
+  font-size: 80px;
+  font-family: Helvetica;
+  font-weight: 770;
 }
 
-body {
-    font-family: sans-serif;
-}
+
 
 a {
     text-decoration: none;
     color: #fff;
 }
+.title{
+  margin-top:15px;
+  font-size: 35px;
+}
 
 body {
-    background-image: linear-gradient( to bottom right, rgba(79,51,176,1.0),rgba(210,53,165));
+    /*background-image: linear-gradient( to bottom right, rgba(79,51,176,1.0),rgba(210,53,165));*/
+    
 }
 
 
@@ -38,33 +49,33 @@ body {
 
 .body-toggler {
     position: absolute;
-    top: 30px;
+    top: 40px;
     right: 20px;
     z-index: 1;
 }
 input[type="checkbox"]{
     position: relative;
-    width: 40px;
-    height: 20px;
+    width: 60px;
+    height: 35px;
     appearance: none;
     background-color: #434343;
     outline: none;
-    border-radius: 10px;
+    border-radius: 30px;
     transition: .5s ease;
   }
   input[type="checkbox"]:checked{
-    background-color: #2664ff;
+    background-color: #F0EFF2;
   }
   
   input[type="checkbox"]::before{
     content: '';
     position: absolute;
-    width: 16px;
-    height: 16px;
-    background-color: #fcfcfc;
+    width: 25px;
+    height: 25px;
+    background-color: #ED9F3B;
     border-radius: 50%;
-    top: 2px;
-    left: 2px;
+    top: 4px;
+    left: 9px;
     transition: .5s ease;
   }
   input[type="checkbox"]:checked::before{
@@ -73,19 +84,22 @@ input[type="checkbox"]{
 
 #display {
   margin: 0 10px;
-  height: 150px;
+  height: 120px;
   width: auto;
   max-width: 270px;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
-  font-size: 30px;
+  font-size: 50px;
   margin-bottom: 20px;
   overflow-x: scroll;
+  font-weight: 600;
 }
 .display-screen{
     height: 150px;
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    
   }
   
 
@@ -103,11 +117,13 @@ button {
   font-size: 20px;
   cursor: pointer;
   transition: all 200ms ease;
+  font-family: Helvetica;
 }
 
 button:hover {
   transform: scale(1.1);
 }
+
 
 button#equal {
   height: 130px;
@@ -116,7 +132,8 @@ button#equal {
 /* dark theme */
 
 .calculator.dark {
-  background-color: #f3ebeb;
+  background-color: #F0EFF2;
+
 }
 
 .calculator.dark #display {
@@ -124,57 +141,58 @@ button#equal {
 }
 
 .calculator.dark button#clear {
-  background-color: #ffd5d8;
-  color: #fc4552;
+  background-color: #A0A0A0;
+  color: #000;
 }
-
 .calculator.dark button.btn-number {
-  background-color: #c3eaff;
+  background-color: #EBE7E7;
   color: #000000;
+}
+.calculator.dark button.btn-number:hover{
+  background-color: #A0A0A0;
 }
 
 .calculator.dark button.btn-operator {
-  background-color: #ffd0fb;
-  color: #f967f3;
+  background-color: #ED9F3B;
+  color: #000;
+}
+.calculator button.btn-opr{
+  background-color: #A0A0A0;
 }
 
 .calculator.dark button.btn-equal {
-  background-color: #adf9e7;
+  background-color: #ED9F3B;
   color: #000;
 }
 .calculator.dark div.display-screen {
-    background-color: #6d6f6d;
+    background-color: #F0EFF2;
     color: #ffffff;
   }
   
 /* light theme */
 
 .calculator {
-  background-color: #071115;
+  background-color: #21252A;
 }
-
-.calculator button#clear {
-  background-color: #2d191e;
-  color: #bd3740;
-}
-
 .calculator button.btn-number {
-  background-color: #1b2f38;
+  background-color: #313131;
   color: #f8fafb;
 }
-
+.calculator button.btn-number:hover{
+  background-color: #A0A0A0;
+}
 .calculator button.btn-operator {
-  background-color: #2e1f39;
-  color: #aa00a4;
+  background-color: #ED9F3B;
+  color: #fff;
 }
 
 .calculator button.btn-equal {
-  background-color: #223323;
+  background-color: #ED9F3B;
   color: #ffffff;
 }
 
 .calculator div.display-screen {
-    background-color: #223323;
+    background-color: #21252A;
     color: #ffffff;
   }
 
